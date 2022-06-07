@@ -1,0 +1,1685 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto:ital,wght@1,300&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Permanent+Marker&family=Roboto:ital,wght@1,300&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+}
+
+h2{
+    display: inline;
+}
+
+
+
+/* GRID EN PAGINA COMPLETA - INDEX*/
+.body-index {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 290px 1fr 1fr 1fr 1fr 30px;
+    column-gap: 10px;
+    row-gap: 60px;
+    grid-template-areas: "header-index header-index header-index header-index" "estrella estrella estrella estrella" "living living living living" "cocina cocina cocina cocina" " taller taller taller taller" "iframe iframe iframe iframe" "footer footer footer footer";
+
+}
+
+
+
+
+
+.header {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px 0px black;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 20;
+
+
+    grid-area: header-index;
+}
+
+.titulo {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+    margin-left: 20px;
+    padding-top: 2px;
+    text-decoration: underline;
+}
+.logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    padding-left: 5px;
+}
+
+.ul {
+    position: relative;
+    left: 300px;
+    top: -35px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 55px;
+}
+
+
+.secciones {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Amatic SC , cursive ;
+}
+
+.secciones:hover {
+    color: rgb(80, 80, 80);
+    
+}
+
+.publicidad-index {
+    height: 350px;
+    width: 90px;
+    background: rgb(252, 245, 245);
+    grid-area: publicidad;
+}
+
+
+/*SECTION PRODUCTOS ESTRELLA*/
+
+.articulos-estrella{
+  
+    
+    height: 270px;
+    width: 700px;
+    background: rgb(252, 245, 245);;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px auto;
+    row-gap: 10px;
+    column-gap: 20px;
+    grid-template-areas: ". toptresventas ." "hijo-1 hijo-2 hijo-3";
+
+    /*Aplicamos los justify y aling*/
+    justify-content: space-evenly;
+
+    align-self: center;
+    justify-self: center;
+
+    grid-area: estrella;
+
+}
+
+#top3-ventas{
+    font-family: Amatic SC;
+    grid-area: toptresventas;
+    justify-self: center;
+    align-self: end;
+}
+
+.hijo {
+    border: 1px solid black;
+    height: 170px;
+    width: 170px;
+}
+
+#hijo-uno{
+    grid-area: hijo-1;
+}
+.soportecelu {
+    height: 170px;
+    width: 170px;
+}
+
+#hijo-dos {
+    grid-area: hijo-2;
+}
+
+.mesaflotante {
+    height: 170px;
+    width: 170px;
+}
+
+#hijo-tres {
+    grid-area: hijo-3;
+}
+
+.nordica {
+    height: 170px;
+    width: 170px;
+}
+
+/*CONTENEDOR*/
+
+
+body {
+    position: relative;
+    background-image: url(../../imagenes/fondo-taller.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* LIVING*/
+
+.living-extra {
+    font-size: 30px;
+    font-family: Bebas Neue, serif;
+}
+
+.section-living {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+
+    width: 100%;
+    background:rgba(36, 42, 65, 0.7);
+    
+
+
+    grid-area: living;
+}
+
+
+.section-living article {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: rgb(223, 9, 9);
+    
+    margin: 40px 20px;
+    
+}
+
+
+/*cocina*/
+
+.cocina-extra {
+    font-size: 30px;
+    font-family: Bebas Neue, serif;
+}
+
+.section-cocina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    height: 300px;
+    width: 100%;
+    background:rgba(36, 42, 65, 0.7);
+
+    grid-area: cocina;
+}
+
+.section-cocina article{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 40px 20px;
+}
+
+/*taller*/
+
+.taller-extra {
+    font-size: 30px;
+    font-family: Bebas Neue, serif;
+}
+
+.section-taller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+   
+
+    width: 100%;
+    height: 300px;
+    background:rgba(36, 42, 65, 0.7);
+
+
+    grid-area: taller;
+}
+
+.section-taller article{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 40px 20px;
+}
+
+
+
+
+
+
+
+
+
+.contenedor-iframe {
+    display: flex;
+    justify-content: space-around;
+    
+    
+
+    grid-area: iframe;
+}
+
+
+
+footer {
+    display: flex;
+    width: 100%;
+  
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background: rgba(254, 255, 255, 0.6);
+
+    grid-area: footer;
+}
+
+/*@MEDIA INICIO*/
+
+/*para no perderme despues borrar*/
+
+@media screen and (min-width: 320px) {
+
+
+    .ul-responsive-index{
+        display: none;
+        position: absolute;
+        transition: all 1s;
+       
+    }
+    
+    #menu-flex-index:hover > .ul-responsive-index {
+        display: block;
+        top: 48px; 
+        right: 0px;  
+        transition: all 1s;
+        
+    }
+    .ul-responsive-index li {
+        display: block;
+        position: relative;
+        padding: 5px;
+        width: 60px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 1s;
+    }
+    
+    
+    /*menu desplegable - mobile*/
+
+
+    .body-index {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 80px 290px 1fr 1fr 1fr 1fr 30px;
+        column-gap: 10px;
+        row-gap: 30px;
+        grid-template-areas: "header-index header-index" "estrella estrella" "living living" "cocina cocina" "taller taller" "iframe iframe" "footer footer";
+    
+    }
+
+    .header-index {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .titulo {
+        font-style: italic;
+        font-weight: bold;
+        font-family: 'Staatliches', cursive;
+
+        font-size: 27px;
+        text-decoration: underline;
+    }
+    .logo {
+        width: 33px;
+        height: 33px;
+    }
+
+    .ul-index {
+        display: none;
+    }
+
+    .articulos-estrella{
+        justify-self: center;
+        align-content: center;
+        height: 180px;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: "hijo-1 hijo-2";
+    
+        /*Aplicamos lo justify y aling*/
+        justify-content: space-evenly;
+    
+        align-self: center;
+        justify-self: center;
+    
+        grid-area: estrella;
+    
+    }
+    /*ajuste de tamaño de las imagenes - contenedor art. estre.*/
+    .hijo{
+        display: grid;
+        border: none;
+    }
+
+    .soportecelu {
+        justify-self: end;
+        align-self: center;
+
+        height: 90%;
+        width: 85%;
+    }
+    .mesaflotante {
+        justify-self: start;
+        align-self: center;
+
+        height: 90%;
+        width: 85%;
+    }
+    /*cierre*/
+
+    #hijo-tres {
+        display: none;
+    }
+    #top3-ventas {
+        display: none;
+    }
+
+    .section-living,
+    .section-cocina, 
+    .section-taller {
+        display: flex;
+        flex-wrap: nowrap;
+        
+
+
+        width: 100%;
+        height: 180px;
+    }
+
+    /*Extras no entran en responsive-mobile*/
+
+    article#living-extra {
+        display: none;
+    }
+    article#cocina-extra {
+        display: none;
+    }
+    article#taller-extra {
+        display: none;
+    }
+
+    /*CIERRE*/
+
+    .section-living article {
+        width: 40%;
+        height: 100px;
+    }
+
+    .section-cocina article {
+        width: 40%;
+        height: 100px;
+    }
+
+    .section-taller article {
+        width: 40%;
+        height: 100px;
+        min-width: none;
+    }
+
+    /*iframe*/
+    .contenedor-iframe{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-rows: auto;
+        column-gap: 10px;
+        grid-template-areas: "h2-iframe iframe";
+    }
+
+    .h2-iframe {
+        grid-area: h2-iframe;
+        align-self: center;
+        justify-self: center;
+
+        background: whitesmoke;
+        height: 85px;
+        width: 75px;
+        border-radius: 3px;
+        box-shadow: 2px 4px 15px 0px black;
+    }
+    iframe {
+        width: 200px;
+        height: 200px;
+        grid-area: iframe;
+    }
+    /*iframe*/
+
+    /*footer index*/
+
+    .footer-index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-index> h2, p, h3 {
+        display: none;
+    }
+
+    }
+
+@media screen and (min-width: 1000px) {
+    * {
+        margin: 0;
+    }
+    
+    h2{
+        display: inline;
+    }
+    
+    
+    
+    /* GRID EN PAGINA COMPLETA - INDEX*/
+    .body-index {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 290px 1fr 1fr 1fr 1fr 30px;
+        column-gap: 10px;
+        row-gap: 60px;
+        grid-template-areas: "header-index header-index header-index header-index" "estrella estrella estrella estrella" "living living living living" "cocina cocina cocina cocina" " taller taller taller taller" "iframe iframe iframe iframe" "footer footer footer footer";
+    
+    }
+    
+    
+    
+    
+    
+    .header-index {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-index;
+
+        display: block;
+    }
+    
+    .titulo {
+        font-style: italic;
+        font-weight: bold;
+        font-family: 'Staatliches', cursive;
+        margin-left: 20px;
+        padding-top: 2px;
+        text-decoration: underline;
+        
+        display: block;
+
+    }
+    .logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        padding-left: 5px;
+
+    }
+    
+    .ul-index {
+        position: relative;
+        left: 300px;
+        top: -35px;
+
+        display: block;
+    }
+    
+    li {
+        display: inline-block;
+        margin-left: 55px;
+    }
+    
+    
+    .secciones {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Amatic SC , cursive ;
+    }
+    
+    .secciones:hover {
+        color: rgb(80, 80, 80);
+        
+    }
+    
+    
+    
+    /*SECTION PRODUCTOS ESTRELLA*/
+    
+    .articulos-estrella{
+      
+        
+        height: 270px;
+        width: 700px;
+        background: rgb(252, 245, 245);;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50px auto;
+        row-gap: 10px;
+        column-gap: 20px;
+        grid-template-areas: ". toptresventas ." "hijo-1 hijo-2 hijo-3";
+    
+        /*Aplicamos los justify y aling*/
+        justify-content: space-evenly;
+    
+        align-self: center;
+        justify-self: center;
+    
+        grid-area: estrella;
+
+    
+    }
+    
+    #top3-ventas{
+        font-family: Amatic SC;
+        grid-area: toptresventas;
+        justify-self: center;
+        align-self: end;
+
+        display: block;
+
+    }
+    
+    .hijo {
+        border: 1px solid black;
+        height: 170px;
+        width: 170px;
+    }
+    
+    #hijo-uno{
+        grid-area: hijo-1;
+    }
+    .soportecelu {
+        height: 170px;
+        width: 170px;
+    }
+    
+    #hijo-dos {
+        grid-area: hijo-2;
+    }
+    
+    .mesaflotante {
+        height: 170px;
+        width: 170px;
+    }
+    
+    #hijo-tres {
+        grid-area: hijo-3;
+
+        display: block;
+    }
+    
+    .nordica {
+        height: 170px;
+        width: 170px;
+
+        display: block;
+
+    }
+    
+    /*CONTENEDOR*/
+    
+    
+    body {
+        position: relative;
+        background-image: url(../../imagenes/fondo-taller.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    /* LIVING*/
+
+.living-extra {
+    font-size: 30px;
+    font-family: Bebas Neue, serif;
+}
+
+.section-living {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+
+    width: 100%;
+    background:rgba(36, 42, 65, 0.7);
+    
+
+
+    grid-area: living;
+}
+
+
+.section-living article {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: rgb(223, 9, 9);
+    
+    margin: 40px 20px;
+    
+}
+
+
+/*cocina*/
+
+.cocina-extra {
+    font-size: 30px;
+    font-family: Bebas Neue, serif;
+}
+
+.section-cocina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    height: 300px;
+    width: 100%;
+    background:rgba(36, 42, 65, 0.7);
+
+    grid-area: cocina;
+}
+
+.section-cocina article{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 40px 20px;
+}
+
+/*taller*/
+
+.taller-extra {
+    font-size: 30px;
+    font-family: Bebas Neue, serif;
+}
+
+.section-taller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+   
+
+    width: 100%;
+    height: 300px;
+    background:rgba(36, 42, 65, 0.7);
+
+
+    grid-area: taller;
+}
+
+.section-taller article{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 40px 20px;
+}
+
+/*aparecer*/
+
+article#living-extra {
+    display: block;
+}
+article#cocina-extra {
+    display: block;
+}
+article#taller-extra {
+    display: block;
+}
+ 
+/*aparecer*/
+    
+    
+    
+    
+    
+    
+    
+    
+    .contenedor-iframe {
+        display: flex;
+        justify-content: space-around;
+        
+
+    
+        grid-area: iframe;
+    }
+
+    iframe {
+        height: 250px;
+        width: 70%;
+    }
+    
+    
+    
+    footer {
+        display: flex;
+        width: 100%;
+      
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background: rgba(254, 255, 255, 0.6);
+    
+        grid-area: footer;
+    }
+
+    .footer-index> h2, p, h3 {
+        display: block;
+    }
+
+    /*DESAPARECER*/
+    #menu-flex{
+        display: none;
+    }
+
+    .footer-aparecer {
+        display: none;
+    }
+}
+
+
+/*INICIO LISTO, SIGUE PRODUCTOS*/
+
+.body-productos {
+    background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+    /*hice esto para cambiar el background del html productos*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 350px auto 30px;
+    row-gap: 30px;
+    grid-template-areas: "header-productos" "h2-productos" "total-productos" "footer-productos";
+} 
+  
+.header-productos {
+    grid-area: header-productos;
+}
+
+.h2-productos {
+    font-family: Amatic SC , cursive ;
+    font-size: 25px;
+
+    justify-self: center;
+    align-self: center;
+
+    grid-area: h2-productos;
+} /*texto al medio*/
+
+.total-productos {
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+    grid-area: total-productos;
+}
+
+
+section {
+    background: rgb(240, 234, 234);
+    box-shadow: 0px 2px 10px 0px black;
+}
+
+
+
+.mesaflot {
+    display: inline-block;
+    position: relative;
+    order: -2;
+}
+.contenedor-mesa {
+    padding: 10px;
+}
+.product1 {
+    height: 150px;
+    width: 150px;
+}
+
+h3 {
+    text-decoration-line: underline;
+}
+
+.comprar {
+    position: relative;
+
+    width: 70px;
+    height: 20px;
+    background: red;
+    color: antiquewhite;
+}
+
+.soporte {
+    display: inline-block;
+    position: relative;
+}
+.contenedor-soporte {
+    padding: 10px;
+}
+.product2 {
+    height: 150px;
+    width: 150px;
+}
+
+h3 {
+    text-decoration-line: underline;
+}
+
+p {
+    font-family: Amatic SC , cursive ;
+    font-size: 25px;
+}
+
+.comprar {
+    position: relative;
+    top: -80px;
+    width: 70px;
+    height: 20px;
+    background: red;
+    color: antiquewhite;
+    border: 1px solid black;
+}
+
+.footer-productos {
+    display: flex;
+    grid-area: footer-productos;
+}
+
+/*MEDIA PRODUCTOS*/
+@media screen and (min-width: 320px) {
+    .header-productos {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-productos;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ul-productos {
+        display: none;
+    }
+
+    .body-productos {
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 350px auto 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-productos" "h2-productos" "total-productos" "footer-productos";
+    } 
+
+    .total-productos {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+        align-content: space-between;
+    
+        grid-area: total-productos;
+    }
+
+
+    footer > h2, p, h3 {
+        display: none;
+    }
+   
+}
+
+
+@media screen and (min-width: 1000px) {
+    .header-productos {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-productos;
+
+        display: block;
+    }
+
+    .body-productos {
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 350px auto 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-productos" "h2-productos" "total-productos" "footer-productos";
+    } 
+    .titulo {
+        font-style: italic;
+        font-weight: bold;
+        font-family: 'Staatliches', cursive;
+        margin-left: 20px;
+        padding-top: 2px;
+        text-decoration: underline;
+        
+        display: block;
+
+    }
+    .logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        padding-left: 5px;
+
+    }
+    
+    .ul-productos {
+        position: relative;
+        left: 300px;
+        top: -35px;
+
+        display: block;
+    }
+    
+    li {
+        display: inline-block;
+        margin-left: 55px;
+    }
+
+    .total-productos {
+        height: 600px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+        align-content: space-between;
+    
+        grid-area: total-productos;
+    }
+    
+    
+    section {
+        background: rgb(240, 234, 234);
+        box-shadow: 0px 2px 10px 0px black;
+    }
+    
+
+    /*desaparecer*/
+    .footer-aparecer {
+        display: none;
+    }
+    /*aparecer*/
+    footer> h2, p, h3 {
+        display: block;
+    }
+}
+
+/*LISTO PRODUCTOS, SIGUE CARRITO*/
+
+.body-carrito {
+    background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto 30px;
+    row-gap: 20px;
+    height: 100vh;
+    grid-template-areas: "header-carrito" "h2-carrito" "footer-carrito";
+}
+
+.header-carrito {
+    grid-area: header-carrito;
+}
+
+.h2-carrito {
+    font-family: Amatic SC , cursive ;
+    font-size: 25px;
+    justify-self: center;
+    align-self: center;
+
+    grid-area: h2-carrito;
+}
+.footer-carrito {
+    display: flex;
+    justify-content: space-evenly;
+
+    grid-area: footer-carrito;
+}
+
+@media screen and (min-width: 320px) {
+    .body-carrito{
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 350px 350px 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-carrito" "h2-carrito" "." "footer-carrito";
+    }
+    .header-carrito {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-carrito;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ul-carrito{
+        display: none;
+    }
+    #menu-flex{
+        display: block;
+    }
+    .footer-aparecer{
+        align-self: center;
+        /*los puse en el medio porque aparecian en el end del cross axis*/
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-carrito {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-carrito;
+
+        display: block;
+    }
+    .ul-carrito {
+        position: relative;
+        left: 250px;
+        top: -35px;
+
+        display: block;
+    }
+    
+    li {
+        display: inline-block;
+        margin-left: 55px;
+    }
+
+    .h2-carrito {
+        grid-area: h2-carrito;
+    }
+
+    .body-carrito {
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 350px 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-carrito" "h2-carrito" "footer-carrito";
+    }
+    
+    /*desaparecer*/
+    #menu-flex {
+        display: none;
+    }
+    /*cerrado*/
+}
+
+
+
+/*CARRITO LISTO, SIGUE QUIENES SOMOS*/
+
+.body-somos {
+    background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 370px 30px;
+    row-gap: 20px;
+    grid-template-areas: "header-somos" "h2-somos" "footer-somos";
+}
+
+.header-somos {
+    grid-area: header-somos;
+}
+
+.b-somos {
+    font-family: Bebas Neue, serif;
+}
+
+.h2-somos {
+    font-family: Amatic SC , cursive ;
+    font-size: 25px;
+    grid-area: h2-somos;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-somos {
+    display: flex;
+    justify-content: space-evenly;
+
+    grid-area: footer-somos;
+}
+
+/*media quienes somos*/
+
+@media screen and (min-width: 320px) {
+
+/*menu desplegable - mobile*/
+    .ul-responsive {
+        display: none;
+        position: absolute;
+        transition: all 1s;
+       
+    }
+
+    #menu-flex:hover > .ul-responsive {
+        display: block;
+        top: 48px; 
+        right: 0px;  
+        transition: all 1s;
+        
+    }
+    .ul-responsive li {
+        display: block;
+        position: relative;
+        padding: 5px;
+        width: 60px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 1s;
+    }
+
+    
+/*menu desplegable - mobile*/
+
+    .body-somos{
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 350px 350px 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-somos" "h2-somos" "." "footer-somos";
+    }
+    .header-somos {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-somos;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ul-somos{
+        display: none;
+    }
+    #menu-flex{
+        display: block;
+    }
+
+    .h2-somos {
+        font-size: 20px;
+        grid-area: h2-somos;
+    }
+
+    .footer-aparecer{
+        align-self: center;
+        /*los puse en el medio porque aparecian en el end del cross axis*/
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-somos {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-somos;
+
+        display: block;
+    }
+    .ul-somos {
+        position: relative;
+        left: 250px;
+        top: -35px;
+
+        display: block;
+    }
+    
+    li {
+        display: inline-block;
+        margin-left: 55px;
+    }
+
+    .h2-somos {
+    grid-area: h2-somos;
+    }
+
+    .body-somos {
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 350px 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-somos" "h2-somos" "footer-somos";
+    }
+    
+    /*desaparecer*/
+    #menu-flex {
+        display: none;
+    }
+    /*cerrado*/
+}
+
+
+
+
+
+/*LISTO QUIENES SOMOS, SIGUE CONTACTO*/
+
+
+.body-contacto {
+    background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto auto 30px;
+    row-gap: 30px;
+    justify-items: center;
+    grid-template-areas: "header-contacto" "h2-contacto" "form-contacto" "footer-contacto";
+}
+
+.header-contacto {
+    grid-area: header-contacto;
+}
+
+.h2-contacto {
+    font-family: Amatic SC , cursive ;
+    font-size: 25px; 
+    align-self: center;
+    grid-area: h2-contacto;
+}
+
+/*formulario*/
+
+.form-contacto {
+
+    display: flex;
+    width: 700px;
+    justify-content: space-evenly;
+    background: rgb(240, 234, 234);
+    box-shadow: 0px 2px 10px 0px black;
+    padding: 25px;
+    grid-area: form-contacto;
+}
+
+input {
+    margin-top: 10px;
+}
+
+
+/*padre: contenedor-boton-flex*/
+.contenedor-boton-flex{
+    display: flex;
+}
+.boton-enviar {
+    justify-self: center;
+    align-self: center;
+}
+/**/
+
+.footer-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    grid-area: footer-contacto;
+}
+ /*MEDIA CONTACTO-FORM*/
+
+ @media screen and (min-width: 320px) {
+    .body-contacto{
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        /*hice esto para cambiar el background del html productos*/
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 250px 350px 30px;
+        row-gap: 30px;
+        grid-template-areas: "header-contacto" "h2-contacto" "form-contacto" "footer-contacto";
+    }
+    .header-contacto {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-contacto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ul-contacto{
+        display: none;
+    }
+    #menu-flex{
+        display: block;
+    }
+
+    .h2-contacto {
+        width: auto;
+
+        font-size: 20px;
+        grid-area: h2-contacto;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .form-contacto {
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "label-name" "label-ubic" "label-email" "boton-enviar";
+        row-gap: 10px;
+        justify-items: center;
+        width: 70%;/*el 100% te rompe todo no se por quE*/
+        height: 300px;
+
+
+        background: rgb(240, 234, 234);
+        box-shadow: 0px 2px 10px 0px black;
+        grid-area: form-contacto;
+    }
+    
+    .label-name {
+        grid-area: label-name;
+        align-content: center;
+    }
+    .label-ubic {
+        grid-area: label-ubic;
+    }
+    .label-email{
+        grid-area: label-email;
+    }
+    .contenedor-boton-flex {
+        grid-area: boton-enviar;
+    }
+    input {
+        width: 70px;
+
+        grid-area: input;
+    }
+
+
+
+    /*footer*/
+
+    .footer-contacto > h2, p, h3 {
+        display: none;
+
+    }    
+
+    .footer-aparecer {
+        display: block;
+    }
+    
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .body-contacto {
+        background: linear-gradient(to left, rgb(65, 121, 74), transparent);
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px auto auto 30px;
+        row-gap: 100px;
+        justify-content: center;
+        grid-template-areas: "header-contacto" "h2-contacto" "form-contacto" "footer-contacto";
+    }
+
+    .header-contacto {
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 5px 15px 0px black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+    
+    
+        grid-area: header-contacto;
+
+        display: block;
+    }
+    .ul-contacto {
+        position: relative;
+        left: 230px;
+        top: -35px;
+
+        display: block;
+    }
+    
+    li {
+        display: inline-block;
+        margin-left: 55px;
+    }
+
+    .h2-contacto {
+        width: 100%;
+        font-family: Amatic SC , cursive ;
+        font-size: 25px; 
+        align-self: center;
+        grid-area: h2-contacto;
+        justify-self: center;
+    }
+
+    .form-contacto {
+
+        display: flex;
+        width: 700px;
+        height: 100px;
+        justify-content: space-evenly;
+        background: rgb(240, 234, 234);
+        box-shadow: 0px 2px 10px 0px black;
+        padding: 25px;
+        grid-area: form-contacto;
+    }
+    
+    input {
+        margin-top: 10px;
+    }
+    
+    
+    /*padre: contenedor-boton-flex*/
+    .contenedor-boton-flex{
+        display: flex;
+    }
+    .boton-enviar {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .footer-contacto {
+        display: flex;
+        width: 1000px;
+        grid-area: footer-contacto;
+    }
+
+    .footer-contacto > h2, p, h3 {
+        display: block;
+
+    }  
+
+    /*desaparecer*/
+
+    #menu-flex {
+        display: none;
+    }
+
+    .footer-aparecer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Como tener el html comleto extension*/
+
+/*
+1 El id es mas piola que todos
+2 El class le sigue
+3 despues el selector por etiqueta 
+
+Y aplicar CSS de manera inline, sobre el archivo HTML este tiene la mayor jerarquia*/
+
+/* reseteo( * {
+    margin: 0;
+    padding: 0;
+} )
+*/
