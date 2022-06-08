@@ -795,14 +795,16 @@ article#taller-extra {
     }
     
     
-    
+    /*EDIT DE TODOS LOS FOOTERS*/
     footer {
         display: flex;
         width: 100%;
+        background: rgba(12, 12, 12, 0.6);
+        color: rgb(153, 153, 153);
+
       
         justify-content: space-evenly;
         align-items: flex-end;
-        background: rgba(254, 255, 255, 0.6);
     
         grid-area: footer;
     }
@@ -812,7 +814,7 @@ article#taller-extra {
     }
 
     /*DESAPARECER*/
-    #menu-flex{
+    #menu-flex-index{
         display: none;
     }
 
