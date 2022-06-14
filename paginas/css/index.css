@@ -13,6 +13,24 @@ h2{
     display: inline;
 }
 
+footer {
+    display: flex;
+    width: 100%;
+    background: rgba(12, 12, 12, 0.6);
+    color: rgb(153, 153, 153);
+
+  
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+ 
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(48, 48, 48), rgb(139, 139, 139));
+}
+
+
 
 
 /* GRID EN PAGINA COMPLETA - INDEX*/
@@ -158,13 +176,7 @@ li {
 /*CONTENEDOR*/
 
 
-body {
-    position: relative;
-    background-image: url(../../imagenes/fondo-taller.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 
-}
 
 /* LIVING*/
 
@@ -275,16 +287,7 @@ body {
 
 
 
-footer {
-    display: flex;
-    width: 100%;
-  
-    justify-content: space-evenly;
-    align-items: flex-end;
-    background: rgba(254, 255, 255, 0.6);
 
-    grid-area: footer;
-}
 
 /*@MEDIA INICIO*/
 
@@ -487,14 +490,7 @@ footer {
 
     /*footer index*/
 
-    .footer-index {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .footer-index> h2, p, h3 {
-        display: none;
-    }
+    
 
     }
 
@@ -663,12 +659,7 @@ footer {
     /*CONTENEDOR*/
     
     
-    body {
-        position: relative;
-        background-image: url(../../imagenes/fondo-taller.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    
     
     /* LIVING*/
 
@@ -797,45 +788,41 @@ article#taller-extra {
     
     
     /*EDIT DE TODOS LOS FOOTERS*/
-    footer {
-        display: flex;
-        width: 100%;
-        background: rgba(12, 12, 12, 0.6);
-        color: rgb(153, 153, 153);
-
-      
-        justify-content: space-evenly;
-        align-items: flex-end;
     
-        grid-area: footer;
-    }
 
-    .footer-index> h2, p, h3 {
-        display: block;
-    }
+    
 
     /*DESAPARECER*/
     #menu-flex-index{
         display: none;
     }
-
-    .footer-aparecer {
-        display: none;
-    }
 }
 
 
-/*INICIO LISTO, SIGUE PRODUCTOS*/
+/*PRODUCTOS*/ 
+
+/*TIPOGRAFIA DEL LOGO*/
+.navbar-brand{
+    font-family: Amatic SC, sans-serif;
+    font-size: 30px;
+    background: rgb(255, 255, 255);
+    border: 2px dotted black;
+    padding: 10px;
+    border-radius: 40px;
+}
+/*CLOSE*/
 
 .nav-logo {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 }
+
 /*tamaño de las imagenes del carrusel*/
 .d-block {
     width: 100%;
     height: 300px;
 }
+/*close comment*/
 
 .contenedor-carrusel {
     margin-top: 50px;
@@ -844,32 +831,31 @@ article#taller-extra {
     box-shadow: 2px 2px 10px 3px black;
 }
 
-.h2-productos{
-
-    margin-top: 160px;
-    margin-left: 34%;
-    width: 300px;
-}
-
-.h2-productos-hijo {
-    display: inline;
-    text-align: center;
-    background: whitesmoke;
-    width: 100%;
-}
-
 .total-productos {
-    margin-top: 151px;
+    margin-top: 80px;
 }
 
 .myclass-name-items{
     font-size: 15px;
 }
 
-    .menu-desplegable{
+
+
+/*@Media*/
+
+@media screen and (min-width: 100px) {
+    .contenedor-carrusel {
         display: none;
     }
-
+}
+@media screen and (min-width: 433px) {
+    .contenedor-carrusel {
+        display: block;
+    }
+    .active-touch:hover > .card {
+        box-shadow: 2px 2px 10px 3px black;
+    }
+}
 
 /*LISTO PRODUCTOS, SIGUE CARRITO*/
 
@@ -895,12 +881,7 @@ article#taller-extra {
 
     grid-area: h2-carrito;
 }
-.footer-carrito {
-    display: flex;
-    justify-content: space-evenly;
 
-    grid-area: footer-carrito;
-}
 
 @media screen and (min-width: 320px) {
     .body-carrito{
@@ -934,10 +915,7 @@ article#taller-extra {
     #menu-flex{
         display: block;
     }
-    .footer-aparecer{
-        align-self: center;
-        /*los puse en el medio porque aparecian en el end del cross axis*/
-    }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -1017,12 +995,7 @@ article#taller-extra {
     align-self: center;
 }
 
-.footer-somos {
-    display: flex;
-    justify-content: space-evenly;
 
-    grid-area: footer-somos;
-}
 
 /*media quienes somos*/
 
@@ -1095,10 +1068,7 @@ article#taller-extra {
         grid-area: h2-somos;
     }
 
-    .footer-aparecer{
-        align-self: center;
-        /*los puse en el medio porque aparecian en el end del cross axis*/
-    }
+    
 }
 
 @media screen and (min-width: 1000px) {
@@ -1207,13 +1177,8 @@ input {
 }
 /**/
 
-.footer-contacto {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
 
-    grid-area: footer-contacto;
-}
+
  /*MEDIA CONTACTO-FORM*/
 
  @media screen and (min-width: 320px) {
@@ -1299,14 +1264,7 @@ input {
 
     /*footer*/
 
-    .footer-contacto > h2, p, h3 {
-        display: none;
-
-    }    
-
-    .footer-aparecer {
-        display: block;
-    }
+    
     
 
 
@@ -1386,26 +1344,11 @@ input {
         align-self: center;
     }
 
-    .footer-contacto {
-        display: flex;
-        width: 1000px;
-        grid-area: footer-contacto;
-    }
-
-    .footer-contacto > h2, p, h3 {
-        display: block;
-
-    }  
+     
 
     /*desaparecer*/
 
-    #menu-flex {
-        display: none;
-    }
-
-    .footer-aparecer {
-        display: none;
-    }
+    
 }
 
 
