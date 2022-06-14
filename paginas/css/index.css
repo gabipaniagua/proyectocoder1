@@ -30,7 +30,7 @@ body {
     background: linear-gradient(to bottom, rgb(48, 48, 48), rgb(139, 139, 139));
 }
 
-/*TIPOGRAFIA DEL LOGO*/
+/*TIPOGRAFIA Y BORDER DEL LOGO*/
 .navbar-brand{
     font-family: Amatic SC, sans-serif;
     font-size: 30px;
@@ -46,12 +46,15 @@ body {
     width: 30px;
 }
 
-/*tamaño de las imagenes del carrusel*/
+/*tamaño de las imagenes del carrusel de index y productos*/
 .d-block {
     width: 100%;
     height: 300px;
 }
 /*close comment*/
+
+/*Aca terminan los valores genericos, se comienza a definir estilos de cada seccion*/
+
 
 /*INICIO*/
 
@@ -268,7 +271,7 @@ body {
 /*Como tener el html comleto extension*/
 
 /*
-1 El id es mas piola que todos
+1 El id es mas picante que todos
 2 El class le sigue
 3 despues el selector por etiqueta 
 
