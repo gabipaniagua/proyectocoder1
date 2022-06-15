@@ -200,7 +200,7 @@ body {
 
 
 .footer-somos {
-    margin-top: 50vh;
+    margin-top: 100vh;
 }
 
 
@@ -208,6 +208,10 @@ body {
 
 .h2-contacto {
     margin-bottom: 130px;
+}
+
+.footer-contacto {
+    margin-top: 100vh;
 }
 
 
