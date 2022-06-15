@@ -193,9 +193,37 @@ body {
 
 /*QUIENES SOMOS*/
 
-.row-h2-somos {
-    margin-top: 150px;
+.h2-somos {
     width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: amatic sc, sans-serif;
+    box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+    color: white;
+    background: rgb(100, 100, 100);
+    padding-top: 29px;
+}
+
+.contenedor-puntos-de-venta{
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    
+}
+
+.puntos-de-venta {
+    box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+    color: white;
+    font-family: amatic sc, sans-serif;
+    background: rgb(228, 58, 58);
+    border: 3px dotted black;
+    
 }
 
 
@@ -203,11 +231,84 @@ body {
     margin-top: 100vh;
 }
 
+/*MEDIA*/
+@media screen and (min-width: 272px) {
+    .row-h2-somos {
+        margin-top: 50px;
+        width: 100%;
+        height: 170px;
+    }
+    .h2-somos {
+        width: 100%;
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 324px) {
+    .row-h2-somos {
+        margin-top: 70px;
+        width: 100%;
+        height: 160px;
+    }
+    .h2-somos {
+        width: 100%;
+        height: 160px;
+        text-align: center;
+        font-family: amatic sc, sans-serif;
+    }
+}
+
+@media screen and (min-width: 406px) {
+    .row-h2-somos {
+        margin-top: 90px;
+        width: 100%;
+        height: 120px;
+    }
+    .h2-somos {
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        font-family: amatic sc, sans-serif;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .row-h2-somos {
+        margin-top: 80px;
+        width: 100%;
+        height: 100px;
+    }
+    .h2-somos {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-family: amatic sc, sans-serif;
+        box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+        color: white;
+        background: rgb(100, 100, 100);
+        padding-top: 29px;
+    }
+}
+
 
 /*CONTACTO*/
 
+
+.row-h2-contacto {
+    margin-top: 150px;
+    width: 100%;
+    height: 100px;
+}
 .h2-contacto {
     margin-bottom: 130px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: amatic sc, sans-serif;
+    box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+    color: white;
+    background: rgb(100, 100, 100);
+    padding-top: 29px;
 }
 
 .footer-contacto {
