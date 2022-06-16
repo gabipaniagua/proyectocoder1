@@ -181,9 +181,24 @@ body {
 }
 
 /* CARRITO*/
+.flex-h2-carrito {
+    display: flex;
+    justify-content: center;
+}
 .row-h2-carrito {
     margin-top: 150px;
     width: 100%;
+}
+
+.h2-carrito {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: amatic sc, sans-serif;
+    box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+    color: white;
+    background: rgb(100, 100, 100);
+    padding-top: 29px;
 }
 
 
@@ -192,6 +207,10 @@ body {
 }
 
 /*QUIENES SOMOS*/
+.flex-h2-somos {
+    display: flex;
+    justify-content: center;
+}
 
 .h2-somos {
     width: 100%;
@@ -293,7 +312,10 @@ body {
 
 /*CONTACTO*/
 
-
+.flex-h2-contacto {
+    display: flex;
+    justify-content: center;
+}
 .row-h2-contacto {
     margin-top: 150px;
     width: 100%;
@@ -314,76 +336,3 @@ body {
 .footer-contacto {
     margin-top: 100vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Como tener el html comleto extension*/
-
-/*
-1 El id es mas picante que todos
-2 El class le sigue
-3 despues el selector por etiqueta 
-
-Y aplicar CSS de manera inline, sobre el archivo HTML este tiene la mayor jerarquia*/
-
-/* reseteo( * {
-    margin: 0;
-    padding: 0;
-} )
-*/
