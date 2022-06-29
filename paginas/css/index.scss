@@ -1,10 +1,13 @@
 @import "tipografias";
 @import "colores";
+@import "medidas";
+
 
 
 * {
     margin: 0;
 }
+
 
 h2{
     display: inline;
@@ -19,8 +22,11 @@ footer {
     align-items: flex-end;
 }
 
-body {
-    background: $backgroundBody;
+.body {
+    background-image: url(../../imagenes/background-body2-min.jpg);
+    
+    background-size: cover;
+    
 }
 
 /*TIPOGRAFIA Y BORDER DEL LOGO*/
@@ -69,49 +75,78 @@ div{
     width: 400px;
     box-shadow: 2px 2px 10px 3px black;
 }
+.flex-h1-index{
+    @extend .flex-h2-carrito;
+    margin-top: -50px * 2;
+    .row-h1-index{
+        @extend .row-h2-carrito;
+        .h1-index{
+            @extend .h2-carrito;
+
+        }
+    }
+}
 
 .container-padre-pagos {
     margin-top: 50px;
-}
-.container-pagos {
-    height: 70px;
-    background: rgb(2, 2, 2);
-}
-
-.row-pagos {
-    height: 80%;
-    width: 70%;
-
-    margin: auto;
-
-}
-
-.row-pagos article {
-    margin-left: 20px;
-    height: 100%;
-    text-align: center;
-    color: white;
+    .container-pagos {
+        height: 70px;
+        background: rgb(2, 2, 2);
+        .row-pagos {
+            height: 80%;
+            width: 70%;
+            margin: auto;
+            article {
+                margin-left: 20px;
+                height: 100%;
+                text-align: center;
+                color: white;
+                text-shadow: 5px 5px 10px 2px black;
+            }
+        }
+    }
 }
 
 .contenedor-opciones {
-    width: auto;
-}
-.texto-opciones,
-.texto-block {
-    width: 100%;
-    font-family: Amatic SC, sans-serif;
-    margin-left: 30%;
+    width: 70%;    
+    margin-top: 50px;
+    .flex-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .texto-opciones,
+        .texto-block {
+            width: 100%;
+            font-family: Amatic SC, sans-serif;
+            color: white;
+    }
 }
 
-.container-iframe {
+}/*contenedor del texto/epigrafe de los 3 items del carrusel opciones*/
+
+
+.container-info-index {
+    display: grid;
+    justify-content: center;
     margin-top: 50px;
+    padding: 20px;
+    background-color: map-get($map: $mapaColores, $key: nuevaseccion);
+    strong {
+        display: block;
+        font-size: map-get($map: $font-sizes, $key: info-index);
+    }
 }
 
 /*@MEDIA*/
 @media screen and (min-width: 258px) {
-    .container-pagos {
-        height: 170px;
-    } 
+    .container-padre-pagos{
+        .container-pagos {
+            height: 170px;
+        } 
+    }
+    .contenedor-opciones {
+        width: 100%;
+    }
     .texto-block {
         display: block;
     }
@@ -124,9 +159,11 @@ div{
     }
 }
 @media screen and (min-width: 362px) {
-    .container-pagos {
-        height: 98px;
-    } 
+    .container-padre-pagos{
+        .container-pagos {
+            height: 98px;
+        } 
+    }
     
 }
 
@@ -137,8 +174,13 @@ div{
 }
 
 @media screen and (min-width: 473px) {
-    .container-pagos {
-        height: 75px;
+    .container-padre-pagos{
+        .container-pagos {
+            height: 75px;
+        }
+    }
+    .contenedor-opciones{
+        width: 70%;
     }
     .texto-block {
         display: none;
@@ -211,13 +253,8 @@ div{
     display: flex;
     justify-content: center;
     .h2-somos {
-        width: 100%;
-        height: 100px;
-        text-align: center;
-        font-family: amatic sc, sans-serif;
-        box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
-        color: white;
-        background: rgb(100, 100, 100);
+        @extend .h2-carrito;
+        height: 140px;
         padding-top: 29px;
     }
 }
