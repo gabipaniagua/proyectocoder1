@@ -77,6 +77,10 @@ div ul .nav-item .nav-link:hover {
   margin-top: -100px;
 }
 
+.flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto {
+  margin-top: 60px;
+}
+
 .container-padre-pagos {
   margin-top: 50px;
 }
@@ -190,6 +194,10 @@ div ul .nav-item .nav-link:hover {
   margin-top: -100px;
 }
 
+.flex-h1-productos .row-h1-productos .h1-productos {
+  margin-top: 60px;
+}
+
 .total-productos {
   margin-top: 80px;
   padding-top: 20px;
@@ -242,6 +250,10 @@ div ul .nav-item .nav-link:hover {
   color: white;
   background: #646464;
   padding-top: 29px;
+}
+
+.agregados {
+  margin-top: 60px;
 }
 
 .footer-carrito {

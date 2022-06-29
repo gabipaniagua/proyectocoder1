@@ -82,6 +82,7 @@ div{
         @extend .row-h2-carrito;
         .h1-index{
             @extend .h2-carrito;
+            margin-top: 60px;
         }
     }
 }
@@ -199,6 +200,7 @@ div{
         @extend .row-h2-carrito;
         .h1-productos{
             @extend .h2-carrito;
+            margin-top: 60px;
         }
     }
 }
@@ -247,6 +249,10 @@ div{
             padding-top: 29px;
         }
     }
+}
+
+.agregados{
+    margin-top: 60px;
 }
 
 .footer-carrito {
