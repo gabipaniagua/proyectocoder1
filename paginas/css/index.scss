@@ -1,7 +1,7 @@
 @import "tipografias";
 @import "colores";
 @import "medidas";
-
+@import "variables";
 
 
 * {
@@ -82,7 +82,6 @@ div{
         @extend .row-h2-carrito;
         .h1-index{
             @extend .h2-carrito;
-
         }
     }
 }
@@ -135,6 +134,7 @@ div{
         display: block;
         font-size: map-get($map: $font-sizes, $key: info-index);
     }
+    
 }
 
 /*@MEDIA*/
@@ -192,16 +192,21 @@ div{
 
 /*PRODUCTOS*/ 
 
-
-.contenedor-carrusel-productos {
-    margin-top: 50px;
-    height: 300px;
-    width: 400px;
-    box-shadow: 2px 2px 10px 3px black;
+.flex-h1-productos{
+    @extend .flex-h2-carrito;
+    margin-top: -50px * 2;
+    .row-h1-productos{
+        @extend .row-h2-carrito;
+        .h1-productos{
+            @extend .h2-carrito;
+        }
+    }
 }
 
 .total-productos {
     margin-top: 80px;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .myclass-name-items{
@@ -229,7 +234,7 @@ div{
     display: flex;
     justify-content: center;
     .row-h2-carrito {
-        margin-top: 150px;
+        margin-top: 80px;
         width: 100%;
         .h2-carrito {
             width: 100%;
@@ -253,7 +258,6 @@ div{
     display: flex;
     justify-content: center;
     .h2-somos {
-        @extend .h2-carrito;
         height: 140px;
         padding-top: 29px;
     }
@@ -341,23 +345,40 @@ div{
 }
 /*CONTACTO*/
 
-.flex-h2-contacto {
+.flex-h1-contacto {
     display: flex;
     justify-content: center;
-    .row-h2-contacto {
-        margin-top: 150px;
+    @extend .flex-h1-index;
+    .row-h1-contacto {
+        @extend .row-h1-index;
+        margin-top: 120px;
         width: 100%;
         height: 100px;
-        .h2-contacto {
-            margin-bottom: 130px;
-            width: 100%;
-            height: 100px;
-            text-align: center;
-            font-family: amatic sc, sans-serif;
-            box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
-            color: white;
-            background: rgb(100, 100, 100);
-            padding-top: 29px;
+        .h1-contacto {
+            @extend .h1-index;
+        }
+    }
+}
+.contenedor-formulario {
+    margin-top: 100px;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: map-get($map: $mapaColores, $key: formularios);
+}
+@each $red, $color in $mapaRedes {
+    .btn-#{$red} {
+        background: $color;
+        color: map-get($map: $mapaColores, $key: letrasblancas);
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        border-radius: 50%;
+        display: flex;
+        &:hover {
+            border: 2px solid white;
         }
     }
 }
