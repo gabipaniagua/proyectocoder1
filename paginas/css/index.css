@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto:ital,wght@1,300&family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Permanent+Marker&family=Roboto:ital,wght@1,300&family=Staatliches&display=swap");
+/*inclui mixin con parametros para los botones de las redes sociales en seccion contacto*/
 * {
   margin: 0;
 }
@@ -370,6 +371,10 @@ div ul .nav-item .nav-link:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background: #c5c4c4;
+}
+
+.contenedor-redes {
+  margin-top: 100px;
 }
 
 .btn-instagram {

@@ -5,7 +5,7 @@
 @mixin cuadrado ($alto, $ancho){
     height: $alto;
     width: $ancho;
-}
+}/*inclui mixin con parametros para los botones de las redes sociales en seccion contacto*/
 
 
 
@@ -379,6 +379,10 @@ div{
     align-content: center;
     justify-content: center;
     background: map-get($map: $mapaColores, $key: formularios);
+}
+
+.contenedor-redes {
+    margin-top: 20px * 5;
 }
 @each $red, $color in $mapaRedes {
     .btn-#{$red} {
