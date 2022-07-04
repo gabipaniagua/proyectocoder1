@@ -172,6 +172,11 @@ div ul .nav-item .nav-link:hover {
     height: 98px;
   }
 }
+@media screen and (min-width: 407px) {
+  .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos {
+    height: 100px;
+  }
+}
 @media screen and (min-width: 433px) {
   .contenedor-carrusel-index {
     width: 400px;
