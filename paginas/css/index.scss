@@ -29,9 +29,8 @@ footer {
 }
 
 .body {
-    background-image: url(../../imagenes/background-body2-min.jpg);   
+    background-image: url(../../imagenes/background-body2-min.jpg);
     background-size: cover;
-    
 }
 
 /*TIPOGRAFIA Y BORDER DEL LOGO*/
@@ -159,10 +158,18 @@ div{
     .texto-opciones{
         display: none;
     }
-    
-
     .contenedor-carrusel-index{
         width: 100%;
+    }
+    .flex-h1-index{
+        
+        .row-h1-index{
+            
+            .h1-index{
+                background: red;
+                height: 190px;
+            }
+        }
     }
 }
 @media screen and (min-width: 362px) {
