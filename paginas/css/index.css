@@ -67,10 +67,26 @@ div ul .nav-item .nav-link:hover {
 }
 
 .flex-h1-index, .flex-h1-contacto, .flex-h1-somos {
+  display: flex;
+  justify-content: center;
   margin-top: -100px;
 }
+.flex-h1-index .row-h1-index, .flex-h1-contacto .row-h1-index, .flex-h1-contacto .row-h1-contacto, .flex-h1-somos .row-h1-index, .flex-h1-somos .row-h1-somos {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%;
+}
 .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos {
+  width: 50%;
+  height: 100px;
   margin-top: 60px;
+  text-align: center;
+  font-family: amatic sc, sans-serif;
+  box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+  color: white;
+  background: rgb(100, 100, 100);
+  padding-top: 29px;
 }
 
 .container-padre-pagos {
@@ -139,9 +155,16 @@ div ul .nav-item .nav-link:hover {
   .contenedor-carrusel-index {
     width: 100%;
   }
+  .flex-h1-index, .flex-h1-contacto, .flex-h1-somos {
+    margin-top: -100px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
   .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos {
-    background: red;
-    height: 190px;
+    margin-top: 50px;
+    height: 120px;
+    width: 65%;
   }
 }
 @media screen and (min-width: 362px) {
@@ -201,17 +224,17 @@ div ul .nav-item .nav-link:hover {
   }
 }
 /* CARRITO*/
-.flex-h1-carrito, .flex-h1-index, .flex-h1-contacto, .flex-h1-somos, .flex-h1-productos {
+.flex-h1-carrito, .flex-h1-productos {
   display: flex;
   justify-content: center;
 }
-.flex-h1-carrito .row-h1-carrito, .flex-h1-index .row-h1-carrito, .flex-h1-contacto .row-h1-carrito, .flex-h1-somos .row-h1-carrito, .flex-h1-productos .row-h1-carrito, .flex-h1-index .row-h1-index, .flex-h1-contacto .row-h1-index, .flex-h1-contacto .row-h1-contacto, .flex-h1-somos .row-h1-index, .flex-h1-somos .row-h1-somos, .flex-h1-productos .row-h1-productos {
+.flex-h1-carrito .row-h1-carrito, .flex-h1-productos .row-h1-carrito, .flex-h1-productos .row-h1-productos {
   display: flex;
   justify-content: center;
   margin-top: 80px;
   width: 100%;
 }
-.flex-h1-carrito .row-h1-carrito .h1-carrito, .flex-h1-index .row-h1-carrito .h1-carrito, .flex-h1-contacto .row-h1-carrito .h1-carrito, .flex-h1-somos .row-h1-carrito .h1-carrito, .flex-h1-productos .row-h1-carrito .h1-carrito, .flex-h1-index .row-h1-index .h1-carrito, .flex-h1-contacto .row-h1-index .h1-carrito, .flex-h1-contacto .row-h1-contacto .h1-carrito, .flex-h1-somos .row-h1-index .h1-carrito, .flex-h1-somos .row-h1-somos .h1-carrito, .flex-h1-productos .row-h1-productos .h1-carrito, .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos, .flex-h1-productos .row-h1-productos .h1-productos {
+.flex-h1-carrito .row-h1-carrito .h1-carrito, .flex-h1-productos .row-h1-carrito .h1-carrito, .flex-h1-productos .row-h1-productos .h1-carrito, .flex-h1-productos .row-h1-productos .h1-productos {
   width: 50%;
   height: 100px;
   text-align: center;
