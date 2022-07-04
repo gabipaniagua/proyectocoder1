@@ -66,18 +66,18 @@ div ul .nav-item .nav-link:hover {
   box-shadow: 2px 2px 10px 3px black;
 }
 
-.flex-h1-index, .flex-h1-contacto, .flex-h1-somos {
+.flex-h1-index, .flex-h1-contacto, .flex-h1-somos, .flex-h1-carrito {
   display: flex;
   justify-content: center;
   margin-top: -100px;
 }
-.flex-h1-index .row-h1-index, .flex-h1-contacto .row-h1-index, .flex-h1-contacto .row-h1-contacto, .flex-h1-somos .row-h1-index, .flex-h1-somos .row-h1-somos {
+.flex-h1-index .row-h1-index, .flex-h1-contacto .row-h1-index, .flex-h1-contacto .row-h1-contacto, .flex-h1-somos .row-h1-index, .flex-h1-somos .row-h1-somos, .flex-h1-carrito .row-h1-index, .flex-h1-carrito .row-h1-carrito {
   display: flex;
   justify-content: center;
   margin-top: 80px;
   width: 100%;
 }
-.flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos {
+.flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos, .flex-h1-carrito .row-h1-index .h1-index, .flex-h1-carrito .row-h1-carrito .h1-index, .flex-h1-carrito .row-h1-carrito .h1-carrito {
   width: 50%;
   height: 100px;
   margin-top: 60px;
@@ -139,7 +139,7 @@ div ul .nav-item .nav-link:hover {
 }
 
 /*@MEDIA*/
-@media screen and (min-width: 258px) {
+@media screen and (min-width: 258px) and (max-width: 420px) {
   .container-padre-pagos .container-pagos {
     height: 170px;
   }
@@ -155,28 +155,36 @@ div ul .nav-item .nav-link:hover {
   .contenedor-carrusel-index {
     width: 100%;
   }
-  .flex-h1-index, .flex-h1-contacto, .flex-h1-somos {
+} /*responsive*/
+@media screen and (min-width: 258px) and (max-width: 406px) {
+  .flex-h1-index, .flex-h1-contacto, .flex-h1-somos, .flex-h1-carrito {
     margin-top: -100px;
     display: flex;
     align-content: center;
     align-items: center;
   }
-  .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos {
+  .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos, .flex-h1-carrito .row-h1-index .h1-index, .flex-h1-carrito .row-h1-carrito .h1-index, .flex-h1-carrito .row-h1-carrito .h1-carrito {
     margin-top: 50px;
     height: 120px;
     width: 65%;
   }
-}
-@media screen and (min-width: 362px) {
-  .container-padre-pagos .container-pagos {
-    height: 98px;
-  }
-}
+} /*.h1-index-responsive*/
 @media screen and (min-width: 407px) {
-  .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos {
+  .flex-h1-index .row-h1-index .h1-index, .flex-h1-contacto .row-h1-index .h1-index, .flex-h1-contacto .row-h1-contacto .h1-index, .flex-h1-contacto .row-h1-contacto .h1-contacto, .flex-h1-somos .row-h1-index .h1-index, .flex-h1-somos .row-h1-somos .h1-index, .flex-h1-somos .row-h1-somos .h1-somos, .flex-h1-carrito .row-h1-index .h1-index, .flex-h1-carrito .row-h1-carrito .h1-index, .flex-h1-carrito .row-h1-carrito .h1-carrito {
+    height: 100px;
+    width: 70%;
+  }
+} /*.h1 responsive*/
+@media screen and (min-width: 290px) {
+  .container-padre-pagos .container-pagos {
+    height: 126px;
+  }
+} /*pagos responsive*/
+@media screen and (min-width: 361px) {
+  .container-padre-pagos .container-pagos {
     height: 100px;
   }
-}
+} /*pagos responsive*/
 @media screen and (min-width: 433px) {
   .contenedor-carrusel-index {
     width: 400px;
@@ -198,10 +206,24 @@ div ul .nav-item .nav-link:hover {
 }
 /*PRODUCTOS*/
 .flex-h1-productos {
-  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+}
+.flex-h1-productos .row-h1-productos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .flex-h1-productos .row-h1-productos .h1-productos {
+  width: 50%;
+  height: 100px;
+  text-align: center;
   margin-top: 60px;
+  font-family: amatic sc, sans-serif;
+  box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
+  color: white;
+  background: rgb(100, 100, 100);
+  padding-top: 29px;
 }
 
 .total-productos {
@@ -215,55 +237,28 @@ div ul .nav-item .nav-link:hover {
 }
 
 /*@Media*/
-@media screen and (min-width: 258px) {
-  .contenedor-carrusel-productos {
-    width: 100%;
+@media screen and (min-width: 258px) and (max-width: 400px) {
+  .flex-h1-productos .row-h1-productos .h1-productos {
+    height: 130px;
   }
-}
+} /*responsive .h1-productos*/
 @media screen and (min-width: 433px) {
-  .contenedor-carrusel-productos {
-    width: 400px;
-  }
   .active-touch:hover > .card {
     box-shadow: 2px 2px 10px 3px black;
   }
-}
+} /*sombra de los productos*/
 /* CARRITO*/
-.flex-h1-carrito, .flex-h1-productos {
-  display: flex;
-  justify-content: center;
-}
-.flex-h1-carrito .row-h1-carrito, .flex-h1-productos .row-h1-carrito, .flex-h1-productos .row-h1-productos {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  width: 100%;
-}
-.flex-h1-carrito .row-h1-carrito .h1-carrito, .flex-h1-productos .row-h1-carrito .h1-carrito, .flex-h1-productos .row-h1-productos .h1-carrito, .flex-h1-productos .row-h1-productos .h1-productos {
-  width: 50%;
-  height: 100px;
-  text-align: center;
-  font-family: amatic sc, sans-serif;
-  box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
-  color: white;
-  background: rgb(100, 100, 100);
-  padding-top: 29px;
-}
-
 .agregados {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 407x) {
+  .flex-h1-carrito .row-h1-carrito .h1-carrito {
+    height: 100px;
+    width: 70%;
+  }
+}
 /*QUIENES SOMOS*/
-.flex-h1-somos {
-  display: flex;
-  justify-content: center;
-}
-.flex-h1-somos .row-h1-somos .h1-somos {
-  height: 140px;
-  padding-top: 29px;
-}
-
 .contenedor-puntos-de-venta {
   margin-top: 80px;
   display: flex;
