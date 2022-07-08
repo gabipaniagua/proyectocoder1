@@ -279,11 +279,18 @@ div{
         }
     }
 }/*responsive .h1-productos*/
-@media screen and (min-width: 433px) {
+@media screen and (min-width: 350px) {
     .active-touch:hover > .card {
         box-shadow: 2px 2px 10px 3px black;
     }
 }/*sombra de los productos*/
+@media screen and (min-width: 992px) {
+    .col-md-6{
+        img{
+            height: 150px;
+        }
+    }
+}
 
 /* CARRITO*/
 .flex-h1-carrito {
