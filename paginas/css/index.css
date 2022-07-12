@@ -79,7 +79,7 @@ div ul .nav-item .nav-link:hover {
   height: 100px;
   margin-top: 60px;
   text-align: center;
-  font-family: acne, sans-serif;
+  font-family: amatic sc, sans-serif;
   box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
   color: white;
   background: rgb(100, 100, 100);
@@ -136,6 +136,16 @@ div ul .nav-item .nav-link:hover {
 }
 
 /*@MEDIA*/
+@media screen and (min-width: 258px) and (max-width: 388px) {
+  .aparecer {
+    display: block;
+  }
+}
+@media screen and (min-width: 389px) {
+  .aparecer {
+    display: none;
+  }
+}
 @media screen and (min-width: 258px) and (max-width: 420px) {
   .container-padre-pagos .container-pagos {
     height: 170px;
