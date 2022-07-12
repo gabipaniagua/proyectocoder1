@@ -150,16 +150,7 @@ div{
 }
 
 /*@MEDIA*/
-@media screen and (min-width: 258px) and (max-width: 388px) {
-    .aparecer{
-        display: block;
-    }
-}
-@media screen and (min-width: 389px) {
-    .aparecer {
-        display: none;
-    }
-}
+
 @media screen and (min-width: 258px) and (max-width: 420px) {
     .container-padre-pagos{
         .container-pagos {
