@@ -205,6 +205,14 @@ div ul .nav-item .nav-link:hover {
     width: 100%;
   }
 } /*responsive*/
+@media screen and (min-width: 421px) {
+  .texto-block {
+    display: none;
+  }
+  .texto-opciones {
+    display: block;
+  }
+}
 @media screen and (min-width: 258px) and (max-width: 406px) {
   .flex-h1-index, .flex-h1-contacto, .flex-h1-somos, .flex-h1-carrito {
     margin-top: -100px;

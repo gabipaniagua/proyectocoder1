@@ -221,6 +221,14 @@ div{
         width: 100%;
     }
 }/*responsive*/
+@media screen and (min-width: 421px) {
+    .texto-block {
+        display: none;
+    }
+    .texto-opciones{
+        display: block;
+    }
+}
 @media screen and (min-width: 258px) and (max-width: 406px) {
     .flex-h1-index{
         margin-top: -50px * 2;
