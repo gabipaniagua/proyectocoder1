@@ -291,6 +291,7 @@ div ul .nav-item .nav-link:hover {
 .col-md-6 .card-body p a {
   text-decoration: none;
   color: black;
+  background: rgb(194, 194, 194);
 }
 .col-md-6 .card-body p a:hover {
   text-decoration: underline;
@@ -398,36 +399,24 @@ div ul .nav-item .nav-link:hover {
 }
 
 .btn-instagram {
-  background: rgb(92, 50, 92);
   color: white;
   margin-top: 20px;
   border-radius: 50%;
   display: flex;
-}
-.btn-instagram:hover {
-  border: 2px solid white;
 }
 
 .btn-facebook {
-  background: rgb(87, 87, 228);
   color: white;
   margin-top: 20px;
   border-radius: 50%;
   display: flex;
-}
-.btn-facebook:hover {
-  border: 2px solid white;
 }
 
 .btn-whatsapp {
-  background: rgb(70, 192, 70);
   color: white;
   margin-top: 20px;
   border-radius: 50%;
   display: flex;
-}
-.btn-whatsapp:hover {
-  border: 2px solid white;
 }
 
 .btn-instagram {
@@ -443,6 +432,10 @@ div ul .nav-item .nav-link:hover {
 .btn-whatsapp {
   height: 90px;
   width: 90px;
+}
+.btn-whatsapp a img {
+  height: 48px;
+  width: 48px;
 }
 
 /*# sourceMappingURL=index.css.map */
