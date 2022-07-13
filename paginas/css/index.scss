@@ -20,16 +20,23 @@ h2{
 }
 
 footer {
-    display: flex;
     width: 100%;
     background: $backgroundFooter;
-    color: rgb(153, 153, 153);
-    justify-content: space-evenly;
-    align-items: flex-end;
+    padding: 20px;
+    .container-fluid{
+        .row{
+            h3{
+                display: block;
+                font-size: 20px;
+                font-family: amatic sc;
+                color: white;
+            }
+        }
+    }
 }
-
 .body {
     background-image: url(../../imagenes/background-body2-min.jpg);
+    
     background-size: cover;
 }
 
@@ -41,7 +48,7 @@ footer {
     
     strong {
         color: rgb(161, 2, 2);
-        font-size: 40px;
+        font-size: 45px;
         padding: 5px;
     }
 }
@@ -147,11 +154,20 @@ div{
     strong {
         display: block;
         font-size: map-get($map: $font-sizes, $key: info-index);
+        font-family: acme, sans-serif;
+       
     }
-    
+    p{
+        a{
+            color: black;
+            &:hover{
+                color: rgb(82, 81, 81);
+            }
+        }
+    }
 }
 .fabricamos{
-    margin-top: -170px;
+    margin-top: -150px;
     h1{
         position: relative;
         z-index: 100;
@@ -191,13 +207,23 @@ div{
         }
     }
 }
-@media screen and (min-width: 501px) and (max-width:650px) {
+@media screen and (min-width: 501px) and (max-width:700px) {
     .fabricamos{
-        margin-top: -130px;
+        margin-top: -125px;
         h1{
-            top: 165px;
+            top: 195px;
             left: 10px;
             font-size: 58px;
+        }
+    }
+}
+@media screen and (min-width: 1150px){
+    .fabricamos{
+        margin-top: -160px;
+        h1{
+            top: 300px;
+            left: 20px;
+            font-size: 80px;
         }
     }
 }
@@ -228,7 +254,7 @@ div{
     .texto-opciones{
         display: block;
     }
-}
+}/*responsive*/
 @media screen and (min-width: 258px) and (max-width: 406px) {
     .flex-h1-index{
         margin-top: -50px * 2;
