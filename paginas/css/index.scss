@@ -34,11 +34,31 @@ footer {
         }
     }
 }
+@media screen and (max-width:380px) {
+    footer{
+        .container-fluid{
+            .row{
+                h3{
+                    font-size: 15px;
+                    img{
+                        @include cuadrado(30px, 30px)
+                    }
+                }
+            }
+        }
+    }
+}
 .body {
     background-image: url(../../imagenes/background-body2-min.jpg);
     background-size: cover;
     overflow-x: hidden;
 }
+.barraNavegacion {
+    font-family: League Gothic, sans-serif;
+    font-size: 35px;
+    padding: 10px;
+    color: white;
+} 
 
 /*TIPOGRAFIA Y BORDER DEL LOGO*/
 .navbar-brand{
@@ -324,15 +344,21 @@ div{
 }/*sombra de los productos*/
 
 @media screen and (min-width: 992px) {
-    .col-md-6{
-        img{
-            height: 150px;
+    .active-touch{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .col-md-6{
+            img{
+                height: 150px;
+                width: 100%;
+            }
         }
     }
 }
 @media screen and (max-width: 991px) {
     .col-md-6{
         img{
+            
             width: 100%
         }
     }
@@ -372,6 +398,17 @@ div{
         @extend .row-h1-productos;
         .h1-somos {
             @extend .h1-productos;
+        }
+        .quienesSomos{
+            background: rgba(0, 0, 0, 0.4);
+            margin-top: 50px;
+            p{
+                color: white;
+                strong{
+                    font-size: 20px;
+                    font-family: acme, sans-serif
+                }
+            }
         }
     }
 }
@@ -460,7 +497,7 @@ div{
     @extend .flex-h1-productos;
     .row-h1-contacto {
         @extend .row-h1-productos;
-        margin-top: 120px;
+        
         width: 100%;
         height: 100px;
         .h1-contacto {
@@ -468,13 +505,25 @@ div{
         }
     }
 }
+@media screen and (min-width: 401px) and (max-width: 935px) {
+    .flex-h1-contacto{
+        .row-h1-contacto {
+            .h1-contacto {
+                width: 70%;
+                height: 100px;
+            }
+        }
+    }
+}
 .contenedor-formulario {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 70%;
     height: 100%;
     display: grid;
+    border-radius: 10px;
     align-content: center;
     justify-content: center;
+    padding: 30px;
     background: map-get($map: $mapaColores, $key: formularios);
 }
 
