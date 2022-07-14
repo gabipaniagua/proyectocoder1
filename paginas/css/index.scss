@@ -36,8 +36,8 @@ footer {
 }
 .body {
     background-image: url(../../imagenes/background-body2-min.jpg);
-    
     background-size: cover;
+    overflow-x: hidden;
 }
 
 /*TIPOGRAFIA Y BORDER DEL LOGO*/
@@ -62,8 +62,7 @@ footer {
 
 /*tamaño de las imagenes del carrusel de index y productos*/
 .d-block {
-    width: 100%;
-    height: 300px;
+    object-fit: cover;
 }
 /*close comment*/
 div{
@@ -84,29 +83,6 @@ div{
 
 /*INICIO*/
 
-
-.flex-h1-index {
-    display: flex;
-    justify-content: center;
-    margin-top: -50px * 2;
-    .row-h1-index {
-        display: flex;
-        justify-content: center;
-        margin-top: 80px;
-        width: 100%;
-        .h1-index {
-            width: 50%;
-            height: 100px;
-            margin-top: 60px;
-            text-align: center;
-            font-family: amatic sc, sans-serif;
-            box-shadow: 5px 5px 20px 5px rgb(51, 51, 51);
-            color: white;
-            background: rgb(100, 100, 100);
-            padding-top: 29px;
-        }
-    }
-}
 .container-padre-pagos {
     margin-top: 50px;
     .container-pagos {
@@ -234,19 +210,18 @@ div{
             height: 170px;
         } 
     }
-    .contenedor-opciones {
-        width: 100%;
-    }
     .texto-block {
         display: block;
     }
     .texto-opciones{
         display: none;
     }
-    .contenedor-carrusel-index{
+}/*responsive*/
+@media screen and (min-width: 258px) and (max-width: 500px) {
+    .contenedor-opciones {
         width: 100%;
     }
-}/*responsive*/
+}
 @media screen and (min-width: 421px) {
     .texto-block {
         display: none;
@@ -255,31 +230,7 @@ div{
         display: block;
     }
 }/*responsive*/
-@media screen and (min-width: 258px) and (max-width: 406px) {
-    .flex-h1-index{
-        margin-top: -50px * 2;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        .row-h1-index{
-            .h1-index{
-                margin-top: 50px;
-                height: 120px;
-                width: 65%;
-            }
-        }
-    }
-}/*.h1-index-responsive*/
-@media screen and (min-width: 407px){
-    .flex-h1-index{
-        .row-h1-index{
-            .h1-index{
-               height: 100px;
-               width: 70%;
-            }
-        }
-    }
-} /*.h1 responsive*/
+
 @media screen and (min-width: 290px) {
     .container-padre-pagos{
         .container-pagos {
@@ -294,21 +245,11 @@ div{
         } 
     }
 }/*pagos responsive*/
-
-@media screen and (min-width: 433px){
-    .contenedor-carrusel-index{
-        width: 400px;
-    }
-}
-
 @media screen and (min-width: 473px) {
     .container-padre-pagos{
         .container-pagos {
             height: 75px;
         }
-    }
-    .contenedor-opciones{
-        width: 70%;
     }
     .texto-block {
         display: none;
@@ -392,11 +333,11 @@ div{
 
 /* CARRITO*/
 .flex-h1-carrito {
-    @extend .flex-h1-index;
+    @extend .flex-h1-productos;
     .row-h1-carrito {
-        @extend .row-h1-index;    
+        @extend .row-h1-productos;    
         .h1-carrito {
-            @extend .h1-index;
+            @extend .h1-productos;
         }
     }
 }
@@ -407,9 +348,9 @@ div{
 
 @media screen and (min-width: 407x) {
     .flex-h1-carrito {
-        @extend .flex-h1-index;
+        @extend .flex-h1-productos;
         .row-h1-carrito {
-            @extend .row-h1-index;    
+            @extend .row-h1-productos;    
             .h1-carrito {
                 height: 100px;
                 width: 70%;
@@ -419,11 +360,11 @@ div{
 }
 /*QUIENES SOMOS*/
 .flex-h1-somos {
-    @extend .flex-h1-index;
+    @extend .flex-h1-productos;
     .row-h1-somos{
-        @extend .row-h1-index;
+        @extend .row-h1-productos;
         .h1-somos {
-            @extend .h1-index;
+            @extend .h1-productos;
         }
     }
 }
@@ -509,14 +450,14 @@ div{
 .flex-h1-contacto {
     display: flex;
     justify-content: center;
-    @extend .flex-h1-index;
+    @extend .flex-h1-productos;
     .row-h1-contacto {
-        @extend .row-h1-index;
+        @extend .row-h1-productos;
         margin-top: 120px;
         width: 100%;
         height: 100px;
         .h1-contacto {
-            @extend .h1-index;
+            @extend .h1-productos;
         }
     }
 }
