@@ -330,6 +330,13 @@ div{
         }
     }
 }
+@media screen and (max-width: 991px) {
+    .col-md-6{
+        img{
+            width: 100%
+        }
+    }
+}
 
 /* CARRITO*/
 .flex-h1-carrito {
@@ -480,6 +487,9 @@ div{
         margin-top: 20px;
         border-radius: 50%;
         display: flex;
+        img:hover{
+            @include cuadrado(55px, 55px)
+        }
     }
 }
 

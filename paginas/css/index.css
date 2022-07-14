@@ -290,6 +290,11 @@ div ul .nav-item .nav-link:hover {
     height: 150px;
   }
 }
+@media screen and (max-width: 991px) {
+  .col-md-6 img {
+    width: 100%;
+  }
+}
 /* CARRITO*/
 .agregados {
   margin-top: 60px;
@@ -381,6 +386,10 @@ div ul .nav-item .nav-link:hover {
   border-radius: 50%;
   display: flex;
 }
+.btn-instagram img:hover {
+  height: 55px;
+  width: 55px;
+}
 
 .btn-facebook {
   color: white;
@@ -388,12 +397,20 @@ div ul .nav-item .nav-link:hover {
   border-radius: 50%;
   display: flex;
 }
+.btn-facebook img:hover {
+  height: 55px;
+  width: 55px;
+}
 
 .btn-whatsapp {
   color: white;
   margin-top: 20px;
   border-radius: 50%;
   display: flex;
+}
+.btn-whatsapp img:hover {
+  height: 55px;
+  width: 55px;
 }
 
 .btn-instagram {
